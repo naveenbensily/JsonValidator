@@ -26,7 +26,7 @@ If all goes well your application hitting the below service should return true  
 
 Now Lets Test the validation by posting some json data . We will be using Curl 
 
-curl -H "Content-Type: application/json" -X POST -d '{"firstName":"Naveen","lastName":"Bensily","id":5,"year":200}' http://localhost:8095/JsonValidator/postJson
+curl -H "Content-Type: application/json" -X POST -d '{"firstName":"Booch","lastName":"B","id":5,"year":200}' http://localhost:8095/JsonValidator/postJson
 
 You should get a validation message .
 
