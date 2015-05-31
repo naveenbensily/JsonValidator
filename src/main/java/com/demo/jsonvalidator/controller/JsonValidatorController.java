@@ -36,7 +36,7 @@ public class JsonValidatorController {
     @RequestMapping(value="/getDefaultCustomer", method = RequestMethod.GET)
     public @ResponseBody Customer getDefaultCustomer(){
 
-            Customer newCustomer = new Customer("Naveen" ,"Bensily");
+            Customer newCustomer = new Customer("Naveen" ,"Bensily" ,1983);
             return newCustomer;
 
     }
