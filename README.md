@@ -28,7 +28,7 @@ Now Lets Test the validation by posting some json data . We will be using Curl
 
 curl -H "Content-Type: application/json" -X POST -d '{"firstName":"Naveen","lastName":"Bensily","id":5,"year":200}' http://localhost:8095/JsonValidator/postJson
 
-
+You should get a validation message .
 
 {"timestamp":1433032022582,"status":400,"error":"Bad Request","exception":"org.springframework.web.bind.MethodArgumentNotValidException","message":"Validation failed for argument at index 0 in method: public void com.demo.jsonvalidator.controller.JsonValidatorController.jsonValidation(com.demo.jsonvalidator.model.Customer), with 1 error(s): [Field error in object 'customer' on field 'year': rejected value [200]; codes [Min.customer.year,Min.year,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customer.year,year]; arguments []; default message [year],2000]; default message [must be greater than or equal to 2000]] ","path":"/JsonValidator/postJson"}PHUSCA-L25236:JsonValidator bensina1$ 
 
