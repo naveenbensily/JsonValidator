@@ -22,6 +22,7 @@ public class Customer {
     @XmlElement
     @Min(2000)
     private long id;
+
     private String firstName;
 
     private String lastName;
