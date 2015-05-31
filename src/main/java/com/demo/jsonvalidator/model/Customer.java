@@ -17,10 +17,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "customer")
 public class Customer {
 
+
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @XmlElement
-    @Min(2000)
+    @Min(2015)
+    private int year;
+
     private long id;
 
     private String firstName;
@@ -29,9 +33,18 @@ public class Customer {
 
     protected Customer() {}
 
-    public Customer(String firstName, String lastName) {
+    public Customer(String firstName, String lastName,int year) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.year=year;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public long getId() {
