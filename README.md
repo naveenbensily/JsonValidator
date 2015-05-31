@@ -8,14 +8,20 @@ Use of  @Valid annotation http://docs.oracle.com/javaee/7/api/index.html?javax/v
 
 Domain Class where the constraints are set against the member variables . Below the year value must be equal or greater than 2015 
 
+Here's an example:
 
+```
 @XmlRootElement(name = "customer")
-public class Customer {
+  public class Customer {
     @XmlElement
     @Min(2015)
     private int year;
     …..
 }
+```
+
+
+
 
 Now Lets run this program and post some Data.
 
